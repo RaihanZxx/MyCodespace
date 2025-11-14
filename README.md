@@ -85,7 +85,7 @@ This is my personal setup for having a full desktop environment (GUI) in GitHub 
 
 - **Desktop Stuff**: xfce4, xfce4-terminal, dbus-x11 (the desktop essentials)
 - **VNC Magic**: x11vnc, xvfb (the screen sharing wizardry)
-- **Dev Tools**: git, Java 17, Python 3 with pip & venv (ready to code!)
+- **Dev Tools**: git, Java 21, Python 3 with pip & venv (ready to code!)
 - **Utilities**: wget, curl, unzip, ca-certificates (the usual suspects)
 - **Web VNC**: websockify, noVNC (browser desktop goodness)
 

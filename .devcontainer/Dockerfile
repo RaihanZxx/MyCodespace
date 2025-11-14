@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
+  && apt-get install -y \
     xfce4 \
     xfce4-terminal \
     dbus-x11 \
@@ -13,7 +13,7 @@ RUN apt-get update \
     curl \
     unzip \
     git \
-    openjdk-17-jdk \
+    openjdk-21-jdk \
     python3-pip \
     python3-venv \
     ca-certificates \
