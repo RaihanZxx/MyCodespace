@@ -1,0 +1,17 @@
+{
+  "name": "XFCE Desktop (noVNC)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [6080],
+  "postCreateCommand": "chmod +x ${containerWorkspaceFolder}/scripts/start.sh || true",
+  "postStartCommand": "nohup ${containerWorkspaceFolder}/scripts/start.sh >/tmp/start.log 2>&1 &",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.remote-repositories"
+      ]
+    }
+  }
+}
