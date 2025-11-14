@@ -31,4 +31,5 @@ sleep 1
 
 echo "Startup complete. Open port 6080 from Codespaces 'Ports' panel and choose 'Open in Browser'."
 
-exec bash
+# Keep the script running to maintain the background processes
+wait

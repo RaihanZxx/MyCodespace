@@ -5,7 +5,7 @@
   },
   "forwardPorts": [6080],
   "postCreateCommand": "chmod +x ${containerWorkspaceFolder}/scripts/start.sh || true",
-  "postStartCommand": "nohup ${containerWorkspaceFolder}/scripts/start.sh >/tmp/start.log 2>&1 &",
+  "postStartCommand": "nohup bash -c '${containerWorkspaceFolder}/scripts/start.sh > /tmp/start.log 2>&1 & disown' || true",
   "remoteUser": "vscode",
   "customizations": {
     "vscode": {
