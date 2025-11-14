@@ -10,7 +10,7 @@ if ! pgrep -x dbus-daemon >/dev/null 2>&1; then
 fi
 
 echo "Starting Xvfb on :99..."
-Xvfb :99 -screen 0 1920x1080x24 >/tmp/xvfb.log 2>&1 &
+Xvfb :99 -screen 0 1366x768x24 >/tmp/xvfb.log 2>&1 &
 XVFB_PID=$!
 sleep 1
 
